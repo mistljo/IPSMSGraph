@@ -50,7 +50,7 @@
             parent::ApplyChanges();             
             
             $sid = $this->RegisterScript("Hook", "Hook", "<? //Do not delete or modify.\nFitbit_Update(".$this->InstanceID.", \"\");");
-            IPS_SetHidden($sid, true); 
+            IPS_SetHidden($sid, false); 
             $this->RegisterHook("/hook/fitbit", $sid);           
             if ( $this->ReadPropertyBoolean("Active") ) 
             { 
