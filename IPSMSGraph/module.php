@@ -1,5 +1,5 @@
 <?php
-    class Fitbit extends IPSModule
+    class IPSMSGraph extends IPSModule
     {
         /**
          * Log Message
