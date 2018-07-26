@@ -115,8 +115,9 @@
             
             exec("mkdir /usr/share/symcon/session/");
             
-            $provider = new djchen\OAuth2\Client\Provider\Fitbit([
-                "clientId"          => $this->ReadPropertyString("ClientId"),
+            //$provider = new djchen\OAuth2\Client\Provider\Fitbit([
+			$provider = new djchen\OAuth2\Client\Provider\Microsoft([            
+				"clientId"          => $this->ReadPropertyString("ClientId"),
                 "clientSecret"      => $this->ReadPropertyString("ClientSecret"),
                 "redirectUri"       => $this->ReadPropertyString("RedirectUri")
             ]);
